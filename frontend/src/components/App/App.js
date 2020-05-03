@@ -117,7 +117,7 @@ const App = () => {
 
       <ScrollToTop>
         <Switch>
-          {data.getAuthUser ? (
+          {data && data.getAuthUser ? (
             <Route
               exact
               render={() => <AppLayout authUser={data.getAuthUser} />}
